@@ -6,11 +6,11 @@ module.exports = {
         headers: {
             'Access-Control-Allow-Origin': '*',
         },
-        proxy: {
-            '/child': {
-                target: 'http://localhost:8080',
-                rewrite: (path) => path.replace(/^\/child/, ""),
-            }
-        }
+        // proxy: {
+        //     '/child': {
+        //         target: 'http://localhost:8080',
+        //         rewrite: (path) => path.replace(/^\/child/, ""),
+        //     }
+        // }
     }
 }
