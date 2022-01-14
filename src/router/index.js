@@ -7,6 +7,9 @@ const routes = [
         path: '/index/:afterUser(.*)',
         name: 'Index',
         component:()=>import('../views/index.vue')
+    }, {
+        path: '/:pathMatch(.*)*',
+        redirectTo:'Index'
     }
 ]
 
